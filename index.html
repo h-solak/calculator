@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="materials/favicon.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600&family=Varela+Round&display=swap');
+    </style>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+ 
+    <title>Calculator v1</title>
+</head>
+<body>
+    <h1>Calculator v1</h1>
+    <div class="container">
+       <h2 id="op"></h2>
+        <ul>
+            <li><input id="main-input" type="text"></li>
+            <li>
+                <div id="tables-container">
+                    <table id="table-1">
+                        <tr>
+                            <td><button id="delete-all">Ac</button></td>
+                            <td>
+                                <button id="delete-icon">
+                                    <i id="delete" class="fas fa-backspace"></i>
+                                </button>
+                            </td>
+                            <td><button id="divide">/</button></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><button id="7" class="numbers">7</button></td>
+                            <td><button id="8" class="numbers">8</button></td>
+                            <td><button id="9" class="numbers">9</button></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><button id="4" class="numbers">4</button></td>
+                            <td><button id="5" class="numbers">5</button></td>
+                            <td><button id="6" class="numbers">6</button></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><button id="1" class="numbers">1</button></td>
+                            <td><button id="2" class="numbers">2</button></td>
+                            <td><button id="3" class="numbers">3</button></td>
+                            
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button id="zero" class="numbers">0</button></td>
+                            <td colspan="1"><button id="point">.</button></td>
+                        </tr>
+                    </table>
+                    
+                    <table id="table-2">
+                        <tr><td><button id="multiply">*</button></td></tr>
+                        <tr><td><button id="subtract">-</button></td></tr>
+                        <tr><td><button id="sum">+</button></td></tr>
+                        <tr><td><button id="equal">=</button></td></tr>
+                    </table>
+                </div> 
+            </li>
+        </ul>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
